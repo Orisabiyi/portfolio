@@ -1,0 +1,41 @@
+.btn {
+  &-list {
+    @include displayflex(flex, flex-start, center);
+    gap: 1.5rem;
+
+    list-style: none;
+    margin-top: 2.5rem;
+  }
+
+  &-item {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    color: var(--color-primary);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.241);
+
+    @include displayflex(flex, flex-start, center);
+    gap: 5px;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 1s;
+    }
+  }
+
+  &-img {
+    display: inline-block;
+    width: 2rem;
+  }
+
+  &-link {
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: unset;
+    }
+  }
+}

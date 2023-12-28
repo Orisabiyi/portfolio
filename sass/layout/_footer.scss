@@ -1,0 +1,29 @@
+.footer {
+  padding: 5rem 10rem;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: #fff;
+
+  @include displayflex(flex, center, center);
+  flex-direction: column;
+  gap: 5rem;
+
+  .heading-3 {
+    color: currentColor;
+  }
+
+  &__contact {
+    @include displayflex(flex, center, center);
+    gap: 2rem;
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
