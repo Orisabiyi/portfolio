@@ -1,6 +1,10 @@
 .header {
   padding: 5rem 10rem;
 
+  @include respond(phone) {
+    padding: 12rem 6rem;
+  }
+
   &__list {
     @include displayflex(flex, flex-end, center);
     gap: 3rem;
@@ -8,6 +12,10 @@
     list-style: none;
     cursor: pointer;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -42,6 +50,10 @@
       width: 100%;
       transition: all 1s;
     }
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 
   &__skills-list {
@@ -50,6 +62,10 @@
 
     @include displayflex(flex, flex-start, center);
     gap: 3rem;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
   }
 
   &__skills-item {

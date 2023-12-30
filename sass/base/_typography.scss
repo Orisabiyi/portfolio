@@ -2,6 +2,11 @@
   font-size: 8rem;
   font-weight: 300;
   color: var(--color-primary);
+
+  @include respond(phone) {
+    font-size: 7rem;
+    // text-align: center;
+  }
 }
 
 .heading-3 {
@@ -14,9 +19,17 @@
   font-size: 2.75rem;
   font-weight: 500;
   color: var(--color-primary);
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .paragraph {
   font-size: 1.9rem;
   text-align: justify;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }

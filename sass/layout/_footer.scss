@@ -14,7 +14,12 @@
 
   &__contact {
     @include displayflex(flex, center, center);
-    gap: 2rem;
+    gap: 1rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 
   &__link {
@@ -24,6 +29,16 @@
       display: inline-block;
       text-decoration: none;
       color: inherit;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+
+  &__copyright {
+    @include respond(phone) {
+      font-size: 3rem;
     }
   }
 }

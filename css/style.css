@@ -32,6 +32,9 @@ body {
   font-size: 8rem;
   font-weight: 300;
   color: var(--color-primary); }
+  @media only screen and (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 7rem; } }
 
 .heading-3 {
   font-size: 5rem;
@@ -42,10 +45,16 @@ body {
   font-size: 2.75rem;
   font-weight: 500;
   color: var(--color-primary); }
+  @media only screen and (max-width: 37.5em) {
+    .heading-4 {
+      font-size: 4rem; } }
 
 .paragraph {
   font-size: 1.9rem;
   text-align: justify; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph {
+      font-size: 2.5rem; } }
 
 .u-margin-bottom-1 {
   margin-bottom: 1rem; }
@@ -104,14 +113,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem; }
+    gap: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        flex-direction: column;
+        gap: 3rem; } }
   .footer__link:link, .footer__link:visited {
     display: inline-block;
     text-decoration: none;
     color: inherit; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__link {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer__copyright {
+      font-size: 3rem; } }
 
 .header {
   padding: 5rem 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 12rem 6rem; } }
   .header__list {
     display: flex;
     justify-content: flex-end;
@@ -120,6 +142,9 @@ body {
     list-style: none;
     cursor: pointer;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__list {
+        justify-content: center; } }
   .header__link:link, .header__link:visited {
     display: inline-block;
     text-decoration: none;
@@ -140,6 +165,9 @@ body {
     .header__item:hover::before {
       width: 100%;
       transition: all 1s; }
+    @media only screen and (max-width: 37.5em) {
+      .header__item {
+        font-size: 4rem; } }
   .header__skills-list {
     list-style: none;
     cursor: pointer;
@@ -147,6 +175,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__skills-list {
+        flex-wrap: wrap; } }
   .header__skills-item {
     display: flex;
     justify-content: flex-start;
@@ -163,11 +194,18 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .project {
+      gap: 8rem; } }
   .project__container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project__container {
+        flex-direction: column;
+        gap: 5rem; } }
   .project__container-img {
     flex: 0 0 auto;
     width: 40%;
@@ -175,6 +213,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .project__container-img {
+        width: 100%; } }
   .project__img {
     display: block;
     width: 100%;
@@ -185,7 +226,17 @@ body {
   .project__description {
     text-align: left;
     flex: 1; }
+    @media only screen and (max-width: 37.5em) {
+      .project__description {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column; } }
 
 .section-projects {
   padding: 10rem 20rem;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-projects {
+      padding: 12rem 6rem; } }

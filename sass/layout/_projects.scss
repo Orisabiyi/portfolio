@@ -3,9 +3,18 @@
   flex-direction: column;
   gap: 4rem;
 
+  @include respond(phone) {
+    gap: 8rem;
+  }
+
   &__container {
     @include displayflex(flex, center, center);
     gap: 4rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 5rem;
+    }
   }
 
   &__container-img {
@@ -14,6 +23,10 @@
     overflow-x: hidden;
 
     @include displayflex(flex, center, center);
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -29,7 +42,12 @@
 
   &__description {
     text-align: left;
-
     flex: 1;
+
+    @include respond(phone) {
+      order: -1;
+      @include displayflex(flex, center, flex-start);
+      flex-direction: column;
+    }
   }
 }
