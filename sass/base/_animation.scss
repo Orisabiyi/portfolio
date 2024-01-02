@@ -1,13 +1,69 @@
-@keyframes blink-cursor {
-  0% {
-    opacity: 0;
+@keyframes header1 {
+
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  60%,
+  80% {
+    width: 50%;
+  }
+}
+
+@keyframes header2 {
+
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  20%,
+  40% {
+    width: 70%;
+  }
+}
+
+@keyframes cursor {
+
+  0%,
+  100% {
+    opacity: 1;
   }
 
   50% {
-    opacity: 50%;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  @keyframes header1 {
+
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+
+    60%,
+    80% {
+      width: 60%;
+    }
   }
 
-  100% {
-    opacity: 100%;
+  @keyframes header2 {
+
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+
+    20%,
+    40% {
+      width: 80%;
+    }
   }
 }

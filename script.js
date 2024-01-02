@@ -1,7 +1,7 @@
 'use strict';
 
 const headerName = document.querySelector('.header__name');
-const profileName = 'Orisabiyi David';
+const profileName = 'Orisabiyi David,';
 let i = 0;
 
 
