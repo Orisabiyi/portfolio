@@ -166,6 +166,9 @@ body {
       top: 3rem;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 37.5em) {
+        .header__item::before {
+          top: 7rem; } }
     .header__item:hover::before {
       width: 100%;
       transition: all 1s; }

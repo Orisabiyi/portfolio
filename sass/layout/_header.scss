@@ -44,6 +44,10 @@
       top: 3rem;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include respond(phone) {
+        top: 7rem;
+      }
     }
 
     &:hover::before {
