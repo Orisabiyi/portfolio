@@ -8,21 +8,22 @@
   flex-direction: column;
   gap: 5rem;
 
+  @include respond(phone) {
+    gap: 3.5rem;
+  }
+
   .heading-3 {
     color: currentColor;
   }
 
   &__contact {
     @include displayflex(flex, center, center);
-    gap: 1rem;
-
-    @include respond(phone) {
-      flex-direction: column;
-      gap: 3rem;
-    }
+    gap: 2rem;
   }
 
   &__link {
+    width: 4rem;
+    height: 4rem;
 
     &:link,
     &:visited {
@@ -30,10 +31,13 @@
       text-decoration: none;
       color: inherit;
     }
+  }
 
-    @include respond(phone) {
-      font-size: 3rem;
-    }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__copyright {
