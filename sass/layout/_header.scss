@@ -60,6 +60,26 @@
     }
   }
 
+  .heading-1 {
+    @include displayflex(flex, flex-start, center);
+    gap: 2rem;
+  }
+
+  &__name,
+  &__cursor {
+    display: block;
+  }
+
+  &__cursor {
+    width: 2.5rem;
+    height: 10rem;
+    background-color: hsla(234, 64%, 67%, 0.548);
+
+    animation-name: blink-cursor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
   &__skills-list {
     list-style: none;
     cursor: pointer;

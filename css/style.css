@@ -1,3 +1,11 @@
+@keyframes blink-cursor {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 50%; }
+  100% {
+    opacity: 100%; } }
+
 *,
 *::before,
 *::after {
@@ -175,6 +183,20 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__item {
         font-size: 4rem; } }
+  .header .heading-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem; }
+  .header__name, .header__cursor {
+    display: block; }
+  .header__cursor {
+    width: 2.5rem;
+    height: 10rem;
+    background-color: rgba(117, 128, 225, 0.548);
+    animation-name: blink-cursor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
   .header__skills-list {
     list-style: none;
     cursor: pointer;
